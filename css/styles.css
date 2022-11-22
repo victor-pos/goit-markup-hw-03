@@ -24,6 +24,9 @@ ul {
     margin: 0;
     list-style: none;
 }
+img {
+    display: block;
+}
 p,
 h1,
 h2,
@@ -43,6 +46,7 @@ address {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* -----------HEADER----------- */
 .logo {
@@ -106,6 +110,10 @@ address {
 }
 
 /* -----------HERO----------- */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .hero {
     background-color: #2F303A;
     padding: 200px 0;
@@ -155,11 +163,7 @@ address {
     white-space: nowrap;
     overflow: hidden;
 }
-.work {
-    background-color: var(--second-color);
-    text-align: start;
-    padding: 94px 0;
-}
+
 .work-center {
     display: flex;
 }
@@ -183,28 +187,22 @@ address {
 }
 
 /* -----------Work----------- */
-.work2 {
-    background-color: var(--second-color);
-    text-align: start;
-}
 .section-title {
-    font-weight: 700;
+    padding-top: 0;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 .work-img {
     display: flex;
 }
 .work-img>li:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 94px;
 }
 /* -----------Team----------- */
-.section-team {
+.teams {
     background-color: #F5F4FA;
-    padding: 94px 0;
 }
 .team-worker {
     display: flex;
@@ -219,20 +217,23 @@ address {
     margin-right: 30px;
 }
 .team {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
 }
 .team-position {
     margin-top: 10px;
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     color: var(--third-color)
@@ -240,10 +241,6 @@ address {
 }
 
 /* -----------MAIN----------- */
-.projects {
-    background-color: var(--second-color);
-    padding: 94px 0;
-}
 .projects-btn {
     display: flex;
     justify-content: center;
@@ -270,27 +267,25 @@ address {
 .project-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
     gap: 30px;
 }
 .project-card {
     width: calc((100% - 60px) / 3);
     background-color: var(--second-color);
+}
+.card-item {
+    padding: 20px 24px;
     border-left: 1px solid var(--line-color);
     border-right: 1px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
 }
 .project-title {
-    margin-top: 20px;
-    margin-left: 24px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .project-type {
-    margin-bottom: 20px;
-    margin-left: 24px;
     margin-top: 4px;
     font-size: 16px;
     line-height: 1.88;
