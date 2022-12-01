@@ -187,6 +187,9 @@ address {
 }
 
 /* -----------Work----------- */
+.project {
+    padding-top: 0;
+}
 .section-title {
     padding-top: 0;
     font-size: 36px;
